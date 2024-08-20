@@ -1,0 +1,15 @@
+[package]
+name = "qrhandle-client"
+version = "0.1.0"
+authors = ["ergXned <126957013+ergXned@users.noreply.github.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+dioxus = { version = "0.5", features = ["web", "router"] }
+
+# Debug
+dioxus-logger = "0.5.1"
+serde_json = "1.0.125"
