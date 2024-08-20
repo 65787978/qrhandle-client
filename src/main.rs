@@ -12,9 +12,12 @@ for production:
 use dioxus::prelude::*;
 use dioxus_logger::tracing::{info, Level};
 
-use crate::components::{headerfooter::HeaderFooter, home::Home, pagenotfound::PageNotFound};
+use crate::components::{
+    card::Card, headerfooter::HeaderFooter, home::Home, pagenotfound::PageNotFound,
+};
 
 mod components {
+    pub mod card;
     pub mod headerfooter;
     pub mod home;
     pub mod pagenotfound;
@@ -65,7 +68,7 @@ fn App() -> Element {
 
     rsx!(
         div {
-            class: "bg-gradient-to-b from-green-400 to-blue-500",
+            class: "bg-gradient-to-b from-pink-600 to-indigo-900",
 
             div {class:"hidden",
                 width: "100%",
